@@ -1,3 +1,4 @@
+@load ./options.zeek
 @load ./new_conn.zeek
 @load ./main.zeek
 @load ./conn.zeek

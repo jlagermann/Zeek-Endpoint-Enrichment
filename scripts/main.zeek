@@ -42,11 +42,6 @@ event zeek_init()
 
         Input::add_table([ $source="hosts_data.tsv", $name="hosts_data", $idx=Idx,
             $val=Val, $destination=hosts_data, $mode=Input::REREAD ]);
-
-        # If both options for enriching all logs and enriching the conn.log are enabled,
-        # disable the redundant conn.log enrichment.
-        if ( extra_logging_all )
-                extra_logging_conn = F
         }
 
 event Input::end_of_data(name: string, source: string)
