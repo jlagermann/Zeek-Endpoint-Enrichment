@@ -3,6 +3,7 @@
 @load ./main.zeek
 @load ./conn.zeek
 @load ./id-logs.zeek
+@load ./options.zeek
 
 # Only load known.zeek if Known Entities package is enabled.
 @ifdef ( Known::tracking )
