@@ -1,0 +1,8 @@
+[package]
+description = v4.0 - This package enriches multiple logs with host/endpoint information.
+script_dir = scripts
+version=4.0.0
+
+[input hosts_data.tsv]
+summary=List of all known hosts address.
+description=List of all known hosts with IP addresses from an external source.
