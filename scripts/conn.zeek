@@ -1,10 +1,6 @@
 module EndpointEnrichment;
 
 ## Enrich Conn.log only ##
-export {
-        ## Enables the logging of endpoint details to the conn log.
-        option extra_logging_conn = F;
-}
 
 redef record Conn::Info += {
         orig_ep_status: string &log &optional;

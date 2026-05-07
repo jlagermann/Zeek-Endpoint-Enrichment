@@ -1,10 +1,6 @@
 module EndpointEnrichment;
 
 ## Add VLAN to all logs with an "id" field.
-export {
-        ## Enables the logging of endpoint details to the conn log.
-        option extra_logging_all = F;
-}
 
 redef record conn_id += {
         orig_ep_status: string &log &optional;
